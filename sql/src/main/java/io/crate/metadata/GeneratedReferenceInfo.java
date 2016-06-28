@@ -54,8 +54,9 @@ public class GeneratedReferenceInfo extends ReferenceInfo {
                                   DataType type,
                                   ColumnPolicy columnPolicy,
                                   IndexType indexType,
-                                  String formattedGeneratedExpression) {
-        super(ident, granularity, type, columnPolicy, indexType);
+                                  String formattedGeneratedExpression,
+                                  boolean isNotNull) {
+        super(ident, granularity, type, columnPolicy, indexType, isNotNull);
         this.formattedGeneratedExpression = formattedGeneratedExpression;
     }
 
